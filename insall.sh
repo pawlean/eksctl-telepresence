@@ -1,3 +1,4 @@
+#/bin/bash
 
 # Install Telepresence
 sudo curl -fL https://app.getambassador.io/download/tel2oss/releases/download/v2.17.0/telepresence-linux-amd64 -o /usr/local/bin/telepresence
