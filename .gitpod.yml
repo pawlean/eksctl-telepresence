@@ -1,2 +1,4 @@
-image:
-    file: .gitpod.Dockerfile
+tasks:
+    - name: Install dependencies
+      init: ./install.sh 
+      command: echo "Dependencies installed!"
