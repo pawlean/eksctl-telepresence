@@ -19,8 +19,9 @@ sudo mv /tmp/eksctl /usr/local/bin
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 unzip awscliv2.zip
 sudo ./aws/install
+rm -rf awscliv2.zip
 
-aws configure set aws_access_key_id $AWS_ACCESS_KEY
-aws configure set aws_secret_access_key $AWS_SECRET_ACCESS
-aws configure set default.region $AWS_DEFAULT_REGION
+aws configure set aws_access_key_id "$AWS_ACCESS_KEY"
+aws configure set aws_secret_access_key "$AWS_SECRET_ACCESS"
+aws configure set default.region "$AWS_DEFAULT_REGION"
 aws configure set default.output json
